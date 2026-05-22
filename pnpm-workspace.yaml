@@ -1,4 +1,6 @@
-onlyBuiltDependencies:
-  - '@sentry/cli'
-  - esbuild
-  - sharp
+allowBuilds:
+  '@sentry/cli': true
+  esbuild: true
+  sharp: true
+minimumReleaseAgeExclude:
+  - astro@6.3.7
