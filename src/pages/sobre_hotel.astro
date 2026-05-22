@@ -1,24 +1,37 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import MainHeader from '../components/layout/headers/MainHeader.astro'
-import Footer from '../components/layout/Footer.astro'
+import Layout from '../layouts/Layout.astro';
+import MainHeader from '../components/layout/headers/MainHeader.astro';
+import Footer from '../components/layout/Footer.astro';
 
-import Card from '../components/ui/Card.astro'
+import Card from '../components/ui/Card.astro';
+
+import { Image } from 'astro:assets';
+import imgViewSide from '../images/hotel_view_side.webp';
 ---
 
 <Layout pageTitle="Contacto">
     <MainHeader />
     <div id="main-content" class="*:w-full *:text-left *:items-start flex flex-col gap-3 mb-3">
         <Card>
+            <h1>Ubicación</h1>
+			<Image src={imgViewSide} alt="Imagen del hotel" />
             <p>Nuestro hotel se ubica en 20 San Roman Entitatea, Okondo. Tiene tres plantas:</p>
             <p>* En la primera es donde se encuentra la cocina, el salón, el baño, una habitación con estanterías donde puedes dejar cosas y otra habitación bastante grande donde puedes aparcar los coches</p>
             <p>* En el segundo piso en donde se encuentran las 4 habitaciones y en el tercer piso es donde está el camarote.</p>
             <p>El hotel está a 2.28 km de distancia del centro del Okondo.</p>
+
+            <h1>Intelifencia artificial</h1>
+            <p>Para digitalizar nuestro hotel aparte de las habitaciones inteligentes también vamos a poner servicios con IA para que nos ayuden.</p>
+            <p>* <b>Asistentes 24/7:</b> En la tablet de la habitación aparte de haber un método de comunicación con los trabajadores también hay un chat con una IA para que te responda toda duda que tengas.</p>
+            <p>* <b>Recomendador de planes/rutas:</b> En la tablet de la habitación aparte de las funciones antes mencionados también habrá una IA con la información de tu alrededor y así podrá hacer planes dependiendo de los gustos del huésped.</p>
+        </Card>
+        <Card>
+            <h1>Contacto principal de Computerhead</h1>
             <div class="flex flex-col justify-between">
                 <ul>
                     <li>E-mail: contacto[@]computerhead[.]net</li>
                     <li>Teléfono: [privado]</li>
-                    <li>Dirección: SSan Roman Entitatea, 20, 01409 Araba</li>
+                    <li>Dirección: San Juan de Somorrostro, 48550 Muskiz, Vizcaya</li>
                 </ul>
         </Card>
     </div>
