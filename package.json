@@ -1,0 +1,24 @@
+{
+  "name": "reto3-digi-hotel",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "upgrade": "corepack prepare pnpm@latest --activate && pnpm dlx @astrojs/upgrade",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@iconify-json/fluent": "^1.2.47",
+    "@iconify-json/line-md": "^1.2.11",
+    "@sentry/astro": "^10.26.0",
+    "@spotlightjs/astro": "^3.2.6",
+    "@tailwindcss/vite": "^4.1.17",
+    "astro": "^6.3.7",
+    "astro-font": "^1.1.0",
+    "astro-icon": "^1.1.5",
+    "tailwindcss": "^4.1.17",
+    "zod": "^4.4.3"
+  }
+}

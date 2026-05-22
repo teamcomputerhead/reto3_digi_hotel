@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MainHeader from '../components/layout/headers/MainHeader.astro';
+import Footer from '../components/layout/Footer.astro';
+
+import Card from '../components/ui/Card.astro';
+---
+
+<Layout pageTitle="Inicio">
+	<MainHeader />
+	<div id="main-content">
+        <h1 class="text-center text-5xl font-bold">El hotel de energía rural</h1>
+        <p class="py-4 text-xl">Para digitalizar este hotel, ofrecemos los siguientes servicios:</p>
+        <div class="flex grow flex-col sm:flex-row *:w-full *:sm:w-3xs py-2 gap-2 justify-between">
+			<Card icon="fluent:iot-24-regular" size=128>
+				<tit2>Habitaciones domotizadas</tit2>
+                <p>Estas habitacaiones consisten de luces que permiten cambiar su intensidad, su color, entre otros. También incluyen un aire acondicionado para ajustar la temperatura de la habitación al gusto del huesped.</p>
+			</Card>
+            <Card icon="fluent:tablet-32-regular" size=128>
+                <tit2>Tablet en la habitación</tit2>
+                <p>Es una tablet conectada a la recepción que facilita pedir las cosas que necesitas a los trabajadores del hotel o avisar de cualquier evento.</p>
+            </Card>
+            <Card icon="fluent:battery-saver-20-regular" size=120>
+                <tit2>Ahorro automático</tit2>
+                <p>El ahorro consiste en usar el ahorro de energía cuando la habitación esté en desuso: las luces se apagaran automáticamente y el aire acondicionado se pondrá en la potencia mínima para mantener una temperatura estable en caso de que vuelvan los huéspedes.</p>
+            </Card>
+		</div>
+		<div class="flex justify-center mt-12">
+		<a href="/quienes_somos/" class="btn bg-blue-500/75 rounded-full p-4 backdrop-blur shadow-md/50 text-4xl text-shadow-lg/30 font-bold">Contáctanos</a>
+		</div>
+	</div>
+    <Footer />
+</Layout>

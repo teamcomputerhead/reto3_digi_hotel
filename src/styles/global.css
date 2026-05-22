@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+    --t-space: 3;
+
+    --t-link-color: #ffa500;
+    --t-link-hover-color: #e70;
+}
+
+@layer base {
+    body {
+        font-size: var(--text-lg);
+    }
+    h1, tit2 {
+        font-size: var(--text-3xl);
+        font-weight: bold;
+    }
+    h2 {
+        font-size: var(--text-2xl);
+    }
+    div#main-content {
+      margin-top: --spacing(3);
+    }
+    footer {
+      margin-bottom: --spacing(3);
+    }
+}
+
+@layer components {
+    .card {
+        padding: --spacing(3);
+        margin-top: --spacing(3);
+        /*margin-bottom: --spacing(3);*/
+        box-shadow: var(--shadow-lg);
+    }
+    .card-alt {
+        background-color: var(--color-yellow-900);
+        padding: --spacing(2) --spacing(3);
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+body::before {
+		z-index: -1;
+		content: "";
+		background-image: url('/src/images/bg.webp');
+		background-size: cover;
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		opacity: 0.5;
+	}
+
+a:not(.btn) {
+    color: var(--t-link-color);
+    text-decoration: underline;
+    text-underline-offset: --spacing(0.5);
+}
+:not(#main-menu | .btn) > a:hover {
+    /*color: var(--t-link-hover-color);*/
+    /*background-color: #ffff0055;*/
+    text-shadow: 0 0 10px orange;
+}
+:not(.navlinks | .btn) > a::before {
+  content: "[";
+}
+:not(.navlinks | .btn) > a::after {
+  content: "]";
+}
+nav a[aria-current="page"] {
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:not([aria-current="page"]) {
+    color: var(--color-white);
+    text-decoration: underline;
+    text-underline-offset: --spacing(0.5);
+}
+/*
+details[open] summary {
+  border-bottom: 2px solid #888;
+  background-color: #555;
+  transition: var(--transition);
+  outline-offset: -2px;
+}/*
+details[open] pre {
+    margin-top: --spacing(2);
+}*/
+/*
+details:not([disabled]):not([open]):hover {
+  background-color: #444;
+  transition: var(--transition);
+}
+
+details:not([disabled])[open]:hover summary {
+  background-color: #444;
+  outline: 2px solid #444;
+}
+
+details:not([disabled])[open]:hover pre {
+  background-color: #222;
+}
+
+details:not([disabled])[open]:hover {
+  background-color: #333;
+}
+  */

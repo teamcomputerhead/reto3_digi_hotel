@@ -1,0 +1,63 @@
+---
+import { AstroFont } from "astro-font";
+import "../styles/global.css";
+
+const { pageTitle } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="bg-black text-gray-200">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle} - Computerhead</title>
+		<AstroFont
+			config={[
+				{
+					src: [],
+					name: "Funnel Display",
+					googleFontsURL: 'https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800',
+					preload: true,
+					display: "swap",
+					selector: "h1, .title, tit2",
+					fallback: "sans-serif",
+				},
+				{
+					src: [],
+					name: "Chakra Petch",
+					googleFontsURL: 'https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,400;0,700;1,400;1,700',
+					preload: true,
+					display: "swap",
+					selector: ":not(pre) > a, details summary",
+					fallback: "sans-serif",
+				},
+				{
+					src: [],
+					name: "Space Mono",
+					googleFontsURL: 'https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700',
+					preload: false,
+					display: "swap",
+					selector: "pre",
+					fallback: "sans-serif",
+				},
+				{
+					src: [],
+					name: "Fira Sans",
+					googleFontsURL: 'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700',
+					preload: true,
+					display: "swap",
+					selector: "body",
+					fallback: "sans-serif",
+				},
+			]}
+		/>
+	</head>
+	<body id="body" class="size-full justify-self-center">
+		<div id="contflex" class="w-full px-4 max-w-5xl justify-between justify-self-center">
+			<slot />
+		</div>
+		</div>
+	</body>
+</html>

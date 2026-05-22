@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro'
+import MainHeader from '../components/layout/headers/MainHeader.astro'
+import Footer from '../components/layout/Footer.astro'
+
+import Card from '../components/ui/Card.astro'
+---
+
+<Layout pageTitle="Contacto">
+    <MainHeader />
+    <div id="main-content" class="*:w-full *:text-left *:items-start flex flex-col gap-3 mb-3">
+        <Card>
+            <p>Nuestro hotel se ubica en 20 San Roman Entitatea, Okondo. Tiene tres plantas:</p>
+            <p>* En la primera es donde se encuentra la cocina, el salón, el baño, una habitación con estanterías donde puedes dejar cosas y otra habitación bastante grande donde puedes aparcar los coches</p>
+            <p>* En el segundo piso en donde se encuentran las 4 habitaciones y en el tercer piso es donde está el camarote.</p>
+            <p>El hotel está a 2.28 km de distancia del centro del Okondo.</p>
+            <div class="flex flex-col justify-between">
+                <ul>
+                    <li>E-mail: contacto[@]computerhead[.]net</li>
+                    <li>Teléfono: [privado]</li>
+                    <li>Dirección: SSan Roman Entitatea, 20, 01409 Araba</li>
+                </ul>
+        </Card>
+    </div>
+    <Footer />
+</Layout>
