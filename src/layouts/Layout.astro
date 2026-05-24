@@ -54,10 +54,9 @@ const { pageTitle } = Astro.props;
 			]}
 		/>
 	</head>
-	<body id="body" class="size-full justify-self-center">
-		<div id="contflex" class="w-full px-4 max-w-5xl justify-between justify-self-center">
+	<body id="body" class="min-h-dvh w-full justify-self-center">
+		<div id="contflex" class="min-h-dvh flex flex-col w-full px-3 max-w-5xl justify-between justify-self-center mx-auto">
 			<slot />
-		</div>
 		</div>
 	</body>
 </html>
