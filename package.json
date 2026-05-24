@@ -10,16 +10,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@iconify-json/fluent": "^1.2.47",
-    "@iconify-json/line-md": "^1.2.11",
-    "@sentry/astro": "^10.26.0",
+    "@iconify-json/fluent": "^1.2.48",
+    "@iconify-json/line-md": "^1.2.16",
+    "@sentry/astro": "^10.53.1",
     "@spotlightjs/astro": "^3.2.6",
-    "@tailwindcss/vite": "^4.1.17",
+    "@tailwindcss/vite": "^4.3.0",
     "astro": "^6.3.7",
     "astro-font": "^1.1.0",
     "astro-icon": "^1.1.5",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.1.17",
+    "tailwindcss": "^4.3.0",
     "zod": "^4.4.3"
   }
 }
